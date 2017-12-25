@@ -24,7 +24,7 @@ public class MotorbikeCenterController {
 
         LOGGER.info("Before calling server");
 
-        // Get Object from url another server
+        // Get Object from url another server to return or process before return
         String response = restTemplate.getForObject("http://localhost:8085/factory/order/" + bike, String.class);
 
         LOGGER.info("After calling server");
